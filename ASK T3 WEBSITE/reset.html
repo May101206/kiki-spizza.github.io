@@ -1,0 +1,56 @@
+<html>
+   <head>
+    <title>home</title>
+    <link rel="stylesheet" href="reset.css">
+   </head>
+    <body>
+        <div class="form-wrapper" id="wrapper-login">
+            <img src='kikipizzacopy.jpg' class="centre" alt='bg1' />
+            <div class="content-wrapper" id="content-signin">
+                <h1>Welcome!</h1>
+                <form class="form-login">
+                    
+
+                    <input type="text" name="username" placeholder="Username" class="input-username" />
+                    <input type="password" name="password" placeholder="Password" class="input-password" />
+                    
+                    <button type="submit" class="btn-login" formaction="home.html" onclick="myFunction()">LOGIN</button>
+                
+                    <script>
+                        function myFunction() {
+                          var txt;
+                          if (confirm("Welcome back!")) {
+                          }
+                        }
+                    </script>  
+                
+                </form>
+               
+                
+                
+                <p>No account? <a href="#wrapper-signup">Sign up</a></p>
+            </div>
+        </div>
+        <div class="form-wrapper" id="wrapper-signup">
+            <img src='kikipizza.jpg' alt='bg2' />
+            <div class="content-wrapper" id="content-signin">
+                <h1>Join us!</h1>
+                <form class="form-login">
+
+                   
+                    <input type="email" name="email" placeholder="Email address" class="input-email" />
+                    <input type="text" name="username" placeholder="Username" class="input-username" />
+                    <input type="password" name="password" placeholder="Password" class="input-password" />
+                     
+                 
+                    <button type="submit" class="btn-login" formaction="voucher.html" >SIGN UP</button>
+                     
+                     
+
+                </form>    
+                </form>
+                <p>Got account? <a href="#wrapper-login">Sign in</a></p>
+            </div>
+        </div>
+    </body>
+    </html>

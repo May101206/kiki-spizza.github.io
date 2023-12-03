@@ -1,0 +1,237 @@
+<html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>KIKI'S PIZZA</title>
+    <link rel="stylesheet" href="PIZZA.css">
+    <script src="PIZZA.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-dropdown">
+
+
+
+
+        <link rel="stylesheet" href="dropdownmenu.css">
+        <ul id="dropdown-menu-freebie">
+            <li>
+                    <ul class="dropdown-menu">
+              <li><a href="#"><h1>≡</h1></a>
+                            <ul>
+                                            <li><a href="home.html">Home</a></li>
+                  <li><a href="PIZZA.html">Products</a></li>
+          <li><a href="review&commet.html">Comment</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="reset.html">Account</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+            </li>
+        </ul>
+
+
+
+        
+            <h1 >KIKI'S PIZZA</h1>         
+
+
+            <ul>
+                <li> <h3><a href="#section1">PIZZAS</a></h3></li>
+                <li> <h3><a href="#section2">DRINKS</a></h3>  </span></li>
+             </ul>
+
+
+
+
+        <div class="cart-dropdown">
+            <a href="#" class="cart-link">Shopping Cart</a>
+            <div class="cart-content">
+                <ul id="cart-items">
+                    <!-- Cart items will be displayed here -->
+                </ul>
+              
+                <p>Total: RM <span id="cart-total">0.00</span></p>
+                
+
+                <a href="payment.html">
+                    <button class="custom-btn btn"><span>Confirm !</span><span>Check Out </span></button> </a>
+                    
+
+                </div>
+        </div>
+
+
+
+    </header>
+    <div class="container">
+        <!-- Product Grid -->
+
+        
+        
+        
+        <div id="section1" class="product">
+            <img src="classicpepperoni.jpg" alt="Classic Pepperoni">
+            <h2>Classic Pepperoni</h2>
+            <p>Topped with classic pepperoni and pizza mozzarella</p>
+            <p>Price: RM26.50 </p>
+            <button onclick="addToCart('Classic Pepperoni', 26.50)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="margherita.jpg" alt="Margherita">
+            <h2>Margherita</h2>
+            <p>Pesto marinated tomatoes, parmesan and pizza mozzarella.</p>
+            <p>Price:RM25.50</p>
+            <button onclick="addToCart('Margherita', 25.50)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="hawaiianpizza.jpg" alt="Haiwaiian">
+            <h2>Haiwaiian</h2>
+            <p>Ham, pineapple and extra pizza mozzarella. </p>
+            <p>Price: RM25.50 </p>
+            <button onclick="addToCart('Haiwaiian', 25.50)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="meatlovers.jpg" alt="Meat Lover's ">
+            <h2>Meat Lover's</h2>
+            <p>Pepperoni, Italian sausage, mild sausage, beef topping, ham, bacon crumble and pizza mozzarella.</p>
+            <p>Price:RM28.50</p>
+            <button onclick="addToCart('Meat Lovers', 28.50)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="veggielovers.jpg" alt="Veggie Lover's">
+            <h2>Veggie Lover's </h2>
+            <p>Pepperoni, Italian sausage, mild sausage, beef topping, ham, bacon crumble and pizza mozzarella.</p>
+            <p>Price:RM 23.50</p>
+            <button onclick="addToCart('Veggie Lovers', 23.50)">Add to Cart</button>
+        </div>
+        <!-- Product 6 -->
+        <div class="product">
+            <img src="supremepizza.jpg" alt="Supreme Pizza">
+            <h2>Supreme Pizza</h2>
+            <p>Pepperoni, mild sausage, beef topping, green pepper, sliced mushrooms, red onion and pizza mozzarella.</p>
+            <p>Price:RM 26.50</p>
+            <button onclick="addToCart('Supreme Pizza', 26.50)">Add to Cart</button>
+        </div>
+        <!-- Product 7 -->
+        <div class="product">
+            <img src="cheeselovers.jpg" alt="Cheese Lover's">
+            <h2>Cheese Lover's</h2>
+            <p>Extra pizza mozzarella and choose two of your favourite toppings</p>
+            <p>Price:RM25.50</p>
+            <button onclick="addToCart('Cheese Lovers', 25.50)">Add to Cart</button>
+        </div>
+        <!-- Product 8 -->
+        <div class="product">
+            <img src="italianclassic.jpg" alt="Italian Classic">
+            <h2>Italian Classic</h2>
+            <p>Italian sausage, pepperoni, sliced mushroom, roasted red pepper and pizza mozzarella.</p>
+            <p>Price:RM25.50</p>
+            <button onclick="addToCart('Italian Classic', 25.50)">Add to Cart</button>
+        </div>
+        <!-- Product 9 -->
+        <div class="product">
+            <img src="chickencaesar.jpg" alt="Chicken Caesar">
+            <h2>Chicken Caesar</h2>
+            <p>Alfredo sauce, seasoned grilled chicken breast, bacon crumble, roasted garlic, parmesan and pizza mozzarella.</p>
+            <p>Price: RM26.50</p>
+            <button onclick="addToCart('Chicken Caesar', 26.50)">Add to Cart</button>
+        </div>
+      <!-- Product 10 -->
+      <div class="product">
+        <img src="bbqchicken.jpg" alt="BBQ Chicken">
+        <h2>BBQ Chicken</h2>
+        <p>BBQ sauce, seasoned grilled chicken breast, red onion, green peppers, cheddar and pizza mozzarella.</p>
+        <p>Price: RM26.50</p>
+        <button onclick="addToCart('BBQ Chicken', 26.50)">Add to Cart</button>
+         </div>     
+      <!-- Product 11 -->
+      <div class="product">
+        <img src="cheddarbaconranch.jpg" alt="Cheddar Bacon Ranch">
+        <h2>Cheddar Bacon Ranch</h2>
+        <p>Our new light & airy everyday crust featuring cheddar, crispy bacon, and a ranch drizzle.</p>
+        <p>Price: RM26.50</p>
+        <button onclick="addToCart('Cheddar Bacon Ranch', 26.50)">Add to Cart</button>
+         </div>
+
+       <!-- Product 12 -->
+      <div class="product">
+        <img src="triplecrown.jpg" alt="Triple Crown">
+        <h2>Triple Crown</h2>
+        <p>Pepperoni, green pepper, sliced mushrooms and pizza mozzarella.</p>
+        <p>Price: RM25.50</p>
+        <button onclick="addToCart('Triple Crown', 25.50)">Add to Cart</button>
+         </div>
+      
+           
+         
+       
+    
+            
+            
+               
+            <div id="section2"class="product">
+                <img src="coke.jpg" alt="COKE">
+                <h2>COKE</h2>
+                <p>Can 320ml</p>
+                <p>Price: RM3.50</p>
+                <button onclick="addToCart('Coke', 3.50)">Add to Cart</button>
+                 </div> 
+         
+                 
+             <div class="product">
+             <img src="100plus.jpg" alt="100 Plus">
+             <h2>100 Plus</h2>
+              <p>Can 325ml</p>
+              <p>Price: RM3.50</p>
+             <button onclick="addToCart('100 Plus', 3.50)">Add to Cart</button>
+              </div> 
+         
+                     
+             <div class="product">
+              <img src="sprite.jpg" alt="Sprite">
+                        <h2>Sprite</h2>
+                        <p>Can 320ml</p>
+                        <p>Price: RM3.50</p>
+                        <button onclick="addToCart('Sprite', 3.50)">Add to Cart</button>
+                         </div> 
+         
+                         
+
+                         <div class="product">
+                            <img src="milo.jpg" alt="Milo">
+                            <h2>Milo</h2>
+                            <p>Can 240ml</p>
+                            <p>Price: RM4.50</p>
+                            <button onclick="addToCart('Milo', 4.50)">Add to Cart</button>
+                             </div> 
+         
+                             <div class="product">
+                                <img src="pepsi.jpg" alt="Pepsi">
+                                <h2>Pepsi</h2>
+                                <p>Pcan 320ml</p>
+                                <p>Price: RM3.50</p>
+                                <button onclick="addToCart('Pepsi', 3.50)">Add to Cart</button>
+                                 </div>
+
+                             <div class="product">
+                                <img src="mineralwater.jpg" alt="Mineral water">
+                                <h2>Mineral Water</h2>
+                                <p>Bottle 500ml</p>
+                                <p>Price: RM1.50</p>
+                                <button onclick="addToCart('Mineral Water', 1.50)">Add to Cart</button>
+                                 </div> 
+
+
+
+                  
+      </div>                      
+          
+</div>
+
+
+
+    </div>
+</body>
+</html>

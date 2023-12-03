@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+div {
+  text-align: center;
+  font-family: 'Nunito';
+      }
+ 
+.intro {
+  font-size:15px; 
+  color: black;
+  background-color: orange;
+  padding: 5px;
+  opacity: 0.8;
+}
+
+.about {
+  opacity: 1;
+  padding: 8px;
+  background-color: #fce682;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  font-family: 'Nunito', 300;
+      }
+
+.story {
+  opacity: 1;
+  padding: 8px;
+  background-color: #fffff0	;
+  border-style: solid;
+  border-color: grey;
+  border-width: 3px;
+  font-family: 'Nunito', 300;
+      }
+.about {
+  opacity: 1;
+  padding: 8px;
+  background-color: #fce682;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  font-family: 'Nunito', 300;
+      }
+
+.ingredients {
+  opacity: 1;
+  padding: 8px;
+  background-color: #fffff0	;
+  border-style: solid;
+  border-color: grey;
+  border-width: 3px;
+  font-family: 'Nunito', 300;
+      }
+.craftsmanship {
+    opacity: 1;
+    padding: 8px;
+    background-color: #fffff0	;
+    border-style: solid;
+    border-color: grey;
+    border-width: 3px;
+    font-family: 'Nunito', 300;
+        }

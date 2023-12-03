@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+#fh1{
+    padding: 2px 15px;
+    color: rgb(255, 207, 118);
+    text-align: center;
+    
+    
+   }
+   
+   @media (max-width: 400px) {
+     #fh1{
+       font-size: 160px;
+     }
+   }
+   
+   
+   #fh2 {
+    padding: 2px 15px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: normal;
+   }
+   
+   @media (max-width: 400px) {
+     #fh2{
+       font-size: 140px;
+     }
+   }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background:rgba(0, 0, 0, 0.815); }
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #FE9B2A;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#FE9B2A;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC6666; }
+
+
+
+
+
+  
+/* - - - - - RATINGS */
+.rating {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 150px;
+  height: 30px;
+  padding: 5px 10px;
+  margin: auto;
+  border-radius: 30px;
+  display: block;
+  overflow: hidden;
+
+}
+.rating:not(:checked) > input {
+  display: none;
+}
+
+#like {
+  bottom: -408px;
+}
+#like:not(:checked) > label {
+  cursor:pointer;
+  float: right;
+  width: 30px;
+  height: 30px;
+  display: block;
+  text-align:center;
+  font-size: 30px;
+  color: rgb(245, 236, 235, 0.959);
+  line-height: 33px;
+
+}
+#like:not(:checked) > label:hover,
+#like:not(:checked) > label:hover ~ label {
+  color: rgba(245, 236, 235, 0.959);
+}
+#like > input:checked + label:hover,
+#like > input:checked + label:hover ~ label,
+#like > input:checked ~ label:hover,
+#like > input:checked ~ label:hover ~ label,
+#like > label:hover ~ input:checked ~ label {
+  color: rgb(233, 53, 40);
+}
+#like > input:checked ~ label {
+  color:  rgb(233, 53, 40);
+}
+

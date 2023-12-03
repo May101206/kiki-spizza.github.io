@@ -1,0 +1,227 @@
+
+<html>
+  <head>
+    <title>homepage</title>
+    <link rel="stylesheet" href="home.css">
+  <body>
+    
+
+  <nav>
+          <div class="logonav">
+          <img id="logo" src="kikipizzanobg.png" width="175px" height="223px">         
+        </div>
+    
+           <ul>
+
+           </div>
+           <ul>
+
+
+<div class="navigationlinks">
+ 
+     <li><img src="https://i.imgur.com/UBliSUH.png" width="50px"><a href="home.html">|Home|</a>
+     <li><img src="https://i.imgur.com/8Ml2OSR.png" width="50px"> <a href="PIZZA.html">|Products|</a>
+     <li><img src="https://i.imgur.com/oKZ5nj7.png" width="50px"> <a href="review&commet.html">|Comment|</a>
+     <li><img src="https://i.imgur.com/CJ8N1Fa.png" width="50px"><a href="about.html">|About|</a>
+    <li><img src="login.png" width="50px"><a href="reset.html">|Account|</a>
+     </ul>
+      </div>
+      </nav>
+ 
+
+
+      <br>
+     
+      <div class="contacts">
+
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1150px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        
+        /* Number text (1/4 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="1.jpg" style="width:100%">
+         
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="2.jpg" style="width:100%">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="3.jpg" style="width:100%">
+         
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="4.jpg" style="width:100%">
+         
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+        </body>
+        </html> 
+  
+  <br>
+
+
+
+        <p> Have any questions? Maybe give some feedback? Tell us everything! You can contact us using the links below and we'll try our best to respond as soon as possible.</p><hr color="black">
+        <div class="contacts2">
+        <h3><img src="https://i.imgur.com/pKkOVfB.png" height="35">  ||  Email us: <a class="contact-links" href="https://mail.google.com/mail/">kiki'spizza@gmail.com</a><br>
+         
+         
+          <img src="https://i.imgur.com/ilA1Y7N.png" height="35">  ||  Call here: <a class="contact-links" href="tel:03-7833585">03-7833585</a><br>
+         
+          <img src="https://i.imgur.com/rFhprk4.png" height="35">  ||  Come visit:73, Jalan Tun Sambanthan, 30000 Ipoh, Perak</h3></div><center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9822566005932!2d101.07642377396532!3d4.597201142548202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31caec7dae1c88b7%3A0x594cf2b350b0a12c!2s73%2C%20Jalan%20Tun%20Sambanthan%2C%2030000%20Ipoh%2C%20Perak!5e0!3m2!1sen!2smy!4v1700731056997!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"></iframe><center>             
+           
+      <div class="contacts3"><h2> Follow us on our socials! </h2>
+        <h3><img src="https://i.imgur.com/CT1sMkg.png" height="35">  ||  Instagram: <a class="contact-links" href="https://www.instagram.com/accounts/login/">kiki's_pizza</a><br>
+          
+          
+          <img src="https://i.imgur.com/taYbEkI.png" height="35">  ||  Twitter: <a class="contact-links" href="https://twitter.com/login">@kiki's.pizza</a><br>
+          
+          
+          <img src="https://i.imgur.com/TDLPSIt.png" height="35">  ||  Facebook: <a class="contact-links" href="https://www.facebook.com/login/">@kiki'spizzafb</a></h3></div>
+        
+        <div class="contacts4">
+        <h2>Delivery!</h2><h3><img src="https://i.imgur.com/b1EAii1.png" class="delivery"><img src="https://i.imgur.com/WC5zcqd.png" class="delivery"></h3></div></div>
+       
+      
+         <div class="break"></div>
+      </body>
+    </html>
+  

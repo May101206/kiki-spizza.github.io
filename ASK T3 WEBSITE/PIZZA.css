@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 10px;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #000000;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+
+
+.btn{
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  border:none;
+  box-shadow: none;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+.btn span {
+  background: #F8DF7B;
+background: linear-gradient #F8DF7B,#F8DF7B;
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  box-shadow:inset 2px 2px 2px 0px rgba(255, 255, 255, 0.082),
+   7px 7px 20px 0px rgba(255, 248, 248, 0.1),
+   4px 4px 5px 0px rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin:0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.btn span:nth-child(1) {
+  box-shadow:
+   -7px -7px 20px 0px rgba(77, 77, 77, 0.6),
+   -4px -4px 5px 0px rgba(77, 77, 77, 0.6),
+   7px 7px 20px 0px rgba(247, 247, 247, 0.133),
+   4px 4px 5px 0px rgba(224, 222, 222, 0.067);
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn:hover span:nth-child(1) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.btn:hover span:nth-child(2) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+ color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+
+/* Change the h1 text and apply the "Pacifico" handwriting font */
+header {
+    position: relative;
+}
+
+header h1 {
+    font-size: 50px; 
+    text-align: center;
+    background-color: #F8AE49;
+    color: #fff;
+    padding: 1px;
+    margin: 0;
+    font-family: 'Pacifico', cursive; /* Use your preferred handwriting font here */
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#F8AE49;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color:#F8AE49;
+  }
+  
+  
+
+/* Modify header styles for cart dropdown */
+.cart-dropdown {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    display: inline-block;
+}
+
+.cart-link {
+    color: #fff;
+    text-decoration: none;
+    background-color: #f76848;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.cart-link:hover {
+    background-color:  #fdff88;
+}
+
+.cart-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #000000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    right: 0;
+    top: 100%;
+    padding: 10px;
+}
+
+.cart-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-content p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Show the cart content on hover */
+.cart-dropdown:hover .cart-content {
+    display: block;
+}
+/* Style the cart items table */
+#cart-items {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style the table header */
+#cart-items thead {
+    background-color: #F8DF7B;
+    color: #383737;
+}
+
+#cart-items th {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style the table rows */
+#cart-items tbody tr {
+    border-bottom: 1px solid #000000;
+}
+
+#cart-items td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+/* Style the "Remove" button in the cart */
+.remove-button {
+    background-color:  #fdff88;
+    color: #383737;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+
+/* Center the product grid horizontally */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Style individual product boxes */
+.product {
+    background-color: #fff;
+    border: 1px solid #000000;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out; /* Add transform animation */
+}
+
+/* Set fixed width and height for product images */
+.product img {
+    width: 100%; /* Adjust to your preferred width */
+    height: auto;
+}
+
+/* Center product names and descriptions */
+.product h2, .product p {
+    text-align: center;
+}
+
+/* Center the "Add to Cart" button */
+.product button {
+    display: block;
+    margin: 0 auto;
+    background-color: #F8DF7B;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover animation for "Add to Cart" button */
+.product button:hover {
+    background-color: #fdff88;
+    transform: scale(1.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Subtle fade-in animation for product grid items */
+.product {
+    opacity: 1; /* Set opacity to 1 for visible products */
+}
+
+/* Animation for product tags on hover */
+.product:hover {
+    transform: scale(1.05); /* Enlarge the product on hover */
+}
+
+/* Center the shopping cart horizontally */
+#cart {
+    text-align: center;
+    background-color: #FFC0CB;
+    border: 1px solid #000000;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Adjust the margin-top as needed */
+}
+
+/* Center the shopping cart items horizontally */
+#cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style the "Remove" button in the cart */
+#cart button {
+    background-color:  #fdff88;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Center the "Total" text and amount horizontally */
+#cart p {
+    text-align: center;
+}
+/* Style the dropdown menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    z-index: 1;
+}
+
+.dropdown li {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.dropdown li a {
+    color: #fff;
+    text-decoration: none;
+}
